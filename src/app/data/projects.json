@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Portfolio Page",
+    "url": "https://benmarkus.github.io",
+    "description": "My personal portfolio built with Angular.",
+    "tags": ["angular", "typescript", "frontend"]
+  },
+  {
+    "title": "Java Desktop Tycoon Game",
+    "url": "https://github.com/benmarkus/lost-in-transportation",
+    "description": "A Java + libGDX desktop transport tycoon game.",
+    "tags": ["java", "desktop"]
+  },
+  {
+    "title": "Haskell Course Files",
+    "url": "https://github.com/benmarkus/haskell-course-files",
+    "description": "A drag-and-drop task management app.",
+    "tags": ["teaching", "haskell", "functional programming"]
+  }
+]
