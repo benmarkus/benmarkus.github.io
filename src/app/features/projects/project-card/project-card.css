@@ -1,0 +1,73 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  padding: 1.25rem;
+  text-decoration: none;
+  color: inherit;
+  transition: background-color var(--transition-default),
+              box-shadow var(--transition-default),
+              transform var(--transition-default);
+}
+
+.card:hover {
+  background-color: var(--color-surface-hover);
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-2px);
+}
+
+.card-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.75rem;
+  object-fit: contain;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.card-description {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  flex: 1;
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tag {
+  background-color: var(--color-tag-bg);
+  color: var(--color-tag-text);
+  border-radius: var(--radius-tag);
+  padding: 0.2rem 0.55rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+}
+
+.tag[data-tag="angular"]             { background: #3a1a1a; color: #e0604a; }
+.tag[data-tag="typescript"]          { background: #162032; color: #4d9fd6; }
+.tag[data-tag="frontend"]            { background: #1a2a1a; color: #6dbf72; }
+.tag[data-tag="java"]                { background: #2a1e14; color: #d9844a; }
+.tag[data-tag="desktop"]             { background: #1e1e2e; color: #9b8ecf; }
+.tag[data-tag="teaching"]            { background: #1a2626; color: #4cc9c9; }
+.tag[data-tag="haskell"]             { background: #221a2e; color: #b07fd6; }
+.tag[data-tag="functional programming"] { background: #2a1e2e; color: #c97fd6; }
