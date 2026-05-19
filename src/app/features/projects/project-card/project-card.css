@@ -19,21 +19,29 @@
   transform: translateY(-2px);
 }
 
-.card-icon {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 0.75rem;
-  object-fit: contain;
-}
-
 .card-body {
   display: flex;
   flex-direction: column;
   flex: 1;
 }
 
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  flex-shrink: 0;
+}
+
 .card-title {
-  margin: 0 0 0.5rem;
+  margin: 0;
   font-size: 1.05rem;
   font-weight: 600;
   color: var(--color-text-primary);
@@ -71,3 +79,4 @@
 .tag[data-tag="teaching"]            { background: #1a2626; color: #4cc9c9; }
 .tag[data-tag="haskell"]             { background: #221a2e; color: #b07fd6; }
 .tag[data-tag="functional programming"] { background: #2a1e2e; color: #c97fd6; }
+.tag[data-tag="libGDX"]              { background: #2a1e14; color: #d9844a; }

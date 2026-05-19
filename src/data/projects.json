@@ -11,7 +11,8 @@
     "title": "Java Desktop Tycoon Game",
     "url": "https://github.com/benmarkus/lost-in-transportation",
     "description": "A Java + libGDX desktop transport tycoon game.",
-    "tags": ["java", "desktop"]
+    "icon": "assets/lost-in-transportation_icon.png",
+    "tags": ["java", "desktop", "libGDX"]
   },
   {
     "id": 3,
