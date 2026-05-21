@@ -20,5 +20,12 @@
     "url": "https://github.com/benmarkus/haskell-course-files",
     "description": "Course files for the course Functional Programming taught at ELTE.",
     "tags": ["teaching", "haskell", "functional programming"]
+  },
+  {
+    "id": 4,
+    "title": "Formal Logic LaTeX utilities",
+    "url": "https://github.com/benmarkus/benmarkus.github.io",
+    "description": "LaTeX utilities for the course Formal Logic taught at ELTE.",
+    "tags": ["maths", "LaTeX"]
   }
 ]
