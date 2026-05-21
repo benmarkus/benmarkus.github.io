@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Portfolio Page",
-    "url": "https://benmarkus.github.io",
+    "url": "https://github.com/benmarkus/benmarkus.github.io",
     "description": "My personal portfolio built with Angular.",
     "tags": ["angular", "typescript", "frontend"]
   },

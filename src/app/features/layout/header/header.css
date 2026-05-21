@@ -1,0 +1,31 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+  padding: 2rem 1.5rem 0;
+  text-align: center;
+}
+
+.header-inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.name {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  letter-spacing: -0.02em;
+  font-family: var(--font-mono);
+}
+
+.tagline {
+  margin: 0.3rem 0 0;
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  font-family: var(--font-mono);
+
+}
