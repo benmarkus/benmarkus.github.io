@@ -29,6 +29,9 @@
               "src/styles.css"
             ],
             "outputMode": "static",
+            "prerender": {
+              "routes": ["/home", "/projects", "/teaching", "/cv"]
+            },
             "security": {
               "allowedHosts": []
             }
