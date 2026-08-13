@@ -23,7 +23,7 @@
   {
     "id": 4,
     "title": "Formal Logic LaTeX utilities",
-    "url": "https://github.com/benmarkus/benmarkus.github.io",
+    "url": "https://github.com/benmarkus/formal-logic-latex-utilities",
     "description": "LaTeX utilities for the course Formal Logic taught at ELTE.",
     "tags": ["maths", "LaTeX"]
   }
