@@ -33,13 +33,11 @@
   margin: 1rem 0 0;
   line-height: 2;
   font-family: var(--font-mono);
-  font-size: 0.9375rem;
+  font-size: clamp(0.6875rem, 3.4vw, 1.25rem);
   font-weight: 400;
   color: var(--color-text-primary);
 }
 
-/* `font: inherit` keeps the <button> identical to the <a> — buttons
-   otherwise fall back to the UA font instead of inheriting .meta. */
 .link {
   padding: 0;
   border: 0;
@@ -65,7 +63,6 @@
   outline-offset: 3px;
 }
 
-/* Same font, size and weight as the label — only the colour differs. */
 .highlight {
   color: var(--color-accent);
 }
@@ -79,7 +76,6 @@
   padding: 0.75rem 1.5rem;
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: var(--radius-tag);
   box-shadow: var(--shadow-card-hover);
   color: var(--color-text-primary);
   font-family: var(--font-mono);

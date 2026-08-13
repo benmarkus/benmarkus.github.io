@@ -15,8 +15,6 @@
   --color-tag-bg: #2f3136;
   --color-tag-text: #87afd7;
 
-  --radius-card: 12px;
-  --radius-tag: 4px;
   --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.4);
   --shadow-card-hover: 0 6px 24px rgba(0, 0, 0, 0.6);
   --transition-default: 0.2s ease;
