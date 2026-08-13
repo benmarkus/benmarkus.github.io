@@ -11,6 +11,7 @@
   border: 1px solid var(--color-border);
   box-shadow: var(--shadow-card);
   padding: 1.25rem;
+  font-family: var(--font-mono);
   text-decoration: none;
   color: inherit;
   transition: background-color var(--transition-default),
@@ -77,3 +78,5 @@
 .tag[data-tag="haskell"]             { background: #221a2e; color: #b07fd6; }
 .tag[data-tag="functional programming"] { background: #2a1e2e; color: #c97fd6; }
 .tag[data-tag="libGDX"]              { background: #2a1e14; color: #d9844a; }
+.tag[data-tag="c#"]                  { background: #142310; color: #7dc76a; }
+.tag[data-tag="postgre"]             { background: #161b2e; color: #8098d9; }
