@@ -1,16 +1,14 @@
 <a class="card" [href]="project.url" target="_blank" rel="noopener noreferrer">
-  <div class="card-body">
-    <div class="card-header">
-      @if (project.icon) {
-        <img class="card-icon" [src]="project.icon" [alt]="project.title" />
-      }
-      <h3 class="card-title">{{ project.title }}</h3>
-    </div>
-    <p class="card-description">{{ project.description }}</p>
-    <div class="card-tags">
-      @for (tag of project.tags; track tag) {
-        <span class="tag" [attr.data-tag]="tag">{{ tag }}</span>
-      }
-    </div>
+  <div class="card-header">
+    @if (project.icon) {
+      <img class="card-icon" [src]="project.icon" [alt]="project.title" />
+    }
+    <h3 class="card-title">{{ project.title }}</h3>
+  </div>
+  <p class="card-description">{{ project.description }}</p>
+  <div class="card-tags">
+    @for (tag of project.tags; track tag) {
+      <span class="tag" [attr.data-tag]="tag">{{ tag }}</span>
+    }
   </div>
 </a>

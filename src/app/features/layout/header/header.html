@@ -2,6 +2,20 @@
   <div class="header-inner">
     <h1 class="name">Bence Márkus</h1>
     <p class="tagline">Software Developer</p>
+    <p class="meta">
+      <a class="link" href="https://github.com/benmarkus" target="_blank" rel="noopener external">
+        github: <span class="highlight">&#64;benmarkus</span>
+      </a>
+      <br />
+      <button type="button" class="link email-btn" (click)="copyEmail()"
+              aria-label="Copy email address to clipboard">
+        email: <span class="highlight">{{ emailDisplay }}</span>
+      </button>
+    </p>
     <app-navbar />
   </div>
+
+  @if (copied()) {
+    <div class="toast" role="status" aria-live="polite">Copied to clipboard</div>
+  }
 </header>

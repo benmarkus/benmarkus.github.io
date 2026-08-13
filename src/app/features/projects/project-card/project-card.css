@@ -1,6 +1,12 @@
+:host {
+  display: block;
+}
+
 .card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 0.75rem;
+  height: 100%;
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-card);
@@ -9,27 +15,23 @@
   text-decoration: none;
   color: inherit;
   transition: background-color var(--transition-default),
+              border-color var(--transition-default),
               box-shadow var(--transition-default),
               transform var(--transition-default);
 }
 
-.card:hover {
+.card:hover,
+.card:focus-visible {
   background-color: var(--color-surface-hover);
+  border-color: var(--color-accent);
   box-shadow: var(--shadow-card-hover);
   transform: translateY(-2px);
-}
-
-.card-body {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
 }
 
 .card-header {
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  margin-bottom: 0.5rem;
 }
 
 .card-icon {
@@ -48,11 +50,10 @@
 }
 
 .card-description {
-  margin: 0 0 1rem;
+  margin: 0;
   font-size: 0.9rem;
   color: var(--color-text-secondary);
   line-height: 1.5;
-  flex: 1;
 }
 
 .card-tags {
