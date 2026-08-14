@@ -11,7 +11,7 @@
     "title": "Glyf",
     "url": "https://github.com/orgs/glyf-game/repositories",
     "description": "A branch-off of a popular word completion board game with extra spins.",
-    "tags": ["c#", "react", "postgre"]
+    "tags": ["c#", "react", "typescript", "postgre"]
   },
   {
     "id": 3,

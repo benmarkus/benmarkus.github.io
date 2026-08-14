@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Functional Programming",
+    "startYear": 2025,
+    "term": "autumn",
+    "institution": "ELTE",
+    "description": "1st year course introducing students to the functional programming paradigm using Haskell.",
+    "tags": ["haskell", "functional programming"]
+  },
+  {
+    "id": 2,
+    "title": "Logic",
+    "startYear": 2025,
+    "term": "autumn",
+    "institution": "ELTE",
+    "description": "Elective course introducing students to formalization and several logic calculi.",
+    "tags": ["maths"]
+  },
+  {
+    "id": 3,
+    "title": "Computer Basics and Shellscripting",
+    "startYear": 2025,
+    "term": "autumn",
+    "institution": "ELTE",
+    "description": "1st year course introducing students to the fundamentals of Unix-based operating systems, Bash and Powershell scripting.",
+    "tags": ["linux", "bash", "powershell"]
+  },
+  {
+    "id": 4,
+    "title": "Object Oriented Programming",
+    "startYear": 2025,
+    "term": "spring",
+    "institution": "ELTE",
+    "description": "Mandatory course teaching Object Oriented Design, UML diagrams, Design Patterns, Clean Code and SOLID principles with .NET Console Applications.",
+    "tags": ["c#", "OOP", "UML"]
+  },
+  {
+    "id": 5,
+    "title": "Logic",
+    "startYear": 2025,
+    "term": "spring",
+    "institution": "ELTE",
+    "description": "Elective course introducing students to formalization and several logic calculi.",
+    "tags": ["maths"]
+  },
+  {
+    "id": 6,
+    "title": "Programming Technology",
+    "startYear": 2026,
+    "term": "autumn",
+    "institution": "ELTE",
+    "description": "2nd year course introducing students to architecturing code, basics of industry standard CI tooling and desktop application technologies through modern Java and Java Swing.",
+    "tags": ["java", "swing", "git"]
+  },
+  {
+    "id": 7,
+    "title": "Functional Programming",
+    "startYear": 2026,
+    "term": "autumn",
+    "institution": "ELTE",
+    "description": "1st year course introducing students to the functional programming paradigm using Haskell.",
+    "tags": ["haskell", "functional programming"]
+  },
+  {
+    "id": 5,
+    "title": "Logic",
+    "startYear": 2026,
+    "term": "autumn",
+    "institution": "ELTE",
+    "description": "Elective course introducing students to formalization and several logic calculi.",
+    "tags": ["maths"]
+  }
+]

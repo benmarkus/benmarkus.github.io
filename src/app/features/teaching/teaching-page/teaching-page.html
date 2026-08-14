@@ -1,1 +1,27 @@
-<app-wip />
+<div class="shell">
+  <section class="section">
+    <h2 class="section__title">Teaching</h2>
+    <p class="section__lead">
+      Materials for the courses I teach. Every repository below is public &mdash; browse or clone it directly.
+    </p>
+    <ol class="timeline">
+      @for (entry of timeline; track entry.startYear) {
+        <li class="timeline-entry">
+          <h3 class="timeline-year">{{ entry.label }}</h3>
+          <div class="timeline-terms">
+            @for (termGroup of entry.terms; track termGroup.term) {
+              <div class="term-group">
+                <h4 class="term-label">{{ termGroup.term }}</h4>
+                <div class="term-courses">
+                  @for (course of termGroup.courses; track course.id) {
+                    <app-course-card [course]="course" />
+                  }
+                </div>
+              </div>
+            }
+          </div>
+        </li>
+      }
+    </ol>
+  </section>
+</div>

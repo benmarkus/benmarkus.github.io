@@ -59,27 +59,3 @@
   flex-wrap: wrap;
   gap: 0.4rem;
 }
-
-.tag {
-  background-color: var(--color-tag-bg);
-  color: var(--color-tag-text);
-  border: 1px solid #000;
-  padding: 0.2rem 0.55rem;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  font-weight: 500;
-}
-
-.tag[data-tag="angular"]             { background: #3a1a1a; color: #e0604a; }
-.tag[data-tag="typescript"]          { background: #162032; color: #4d9fd6; }
-.tag[data-tag="frontend"]            { background: #1a2a1a; color: #6dbf72; }
-.tag[data-tag="java"]                { background: #2a1e14; color: #d9844a; }
-.tag[data-tag="desktop"]             { background: #1e1e2e; color: #9b8ecf; }
-.tag[data-tag="teaching"]            { background: #1a2626; color: #4cc9c9; }
-.tag[data-tag="haskell"]             { background: #221a2e; color: #b07fd6; }
-.tag[data-tag="functional programming"] { background: #2a1e2e; color: #c97fd6; }
-.tag[data-tag="libGDX"]              { background: #2a1e14; color: #d9844a; }
-.tag[data-tag="c#"]                  { background: #142310; color: #7dc76a; }
-.tag[data-tag="postgre"]             { background: #161b2e; color: #8098d9; }
-.tag[data-tag="maths"]               { background: #2a1e14; color: #e7a376; }
-.tag[data-tag="LaTeX"]               { background: #1d1b1a; color: #e68f38; }
