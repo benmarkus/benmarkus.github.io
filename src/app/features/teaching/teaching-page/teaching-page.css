@@ -12,14 +12,6 @@
   color: var(--color-text-secondary);
 }
 
-.section__lead {
-  margin: 0 0 2rem;
-  max-width: 46rem;
-  font-size: 0.9rem;
-  line-height: 1.6;
-  color: var(--color-text-secondary);
-}
-
 .timeline {
   display: grid;
   gap: 3rem;

@@ -51,6 +51,7 @@
     "term": "autumn",
     "institution": "ELTE",
     "description": "2nd year course introducing students to architecturing code, basics of industry standard CI tooling and desktop application technologies through modern Java and Java Swing.",
+    "url":"https://github.com/benmarkus/2026-teaching-programming-technology",    
     "tags": ["java", "swing", "git"]
   },
   {
@@ -60,6 +61,7 @@
     "term": "autumn",
     "institution": "ELTE",
     "description": "1st year course introducing students to the functional programming paradigm using Haskell.",
+    "url": "https://github.com/benmarkus/2026-teaching-functional-programming",
     "tags": ["haskell", "functional programming"]
   },
   {
