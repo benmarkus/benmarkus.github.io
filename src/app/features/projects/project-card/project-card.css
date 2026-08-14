@@ -63,6 +63,7 @@
 .tag {
   background-color: var(--color-tag-bg);
   color: var(--color-tag-text);
+  border: 1px solid #000;
   padding: 0.2rem 0.55rem;
   font-family: var(--font-mono);
   font-size: 0.72rem;
