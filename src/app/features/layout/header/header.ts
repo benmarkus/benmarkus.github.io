@@ -15,8 +15,11 @@ const EMAIL_TLD = 'com';
 export class Header {
   protected readonly emailDisplay = `${EMAIL_USER} [at] ${EMAIL_DOMAIN} (dot) ${EMAIL_TLD}`;
   protected readonly copied = signal(false);
+  protected readonly tipLabel = signal('Click to copy');
+  protected readonly hovering = signal(false);
 
-  private timer?: ReturnType<typeof setTimeout>;
+  private copiedTimer?: ReturnType<typeof setTimeout>;
+  private labelResetTimer?: ReturnType<typeof setTimeout>;
 
   protected async copyEmail(): Promise<void> {
     const email = `${EMAIL_USER}@${EMAIL_DOMAIN}.${EMAIL_TLD}`;
@@ -29,9 +32,20 @@ export class Header {
       }
     }
 
+    clearTimeout(this.labelResetTimer);
+    this.tipLabel.set('Copied to clipboard');
     this.copied.set(true);
-    clearTimeout(this.timer);
-    this.timer = setTimeout(() => this.copied.set(false), 2000);
+
+    clearTimeout(this.copiedTimer);
+    this.copiedTimer = setTimeout(() => {
+      this.copied.set(false);
+
+      if (this.hovering()) {
+        this.tipLabel.set('Click to copy');
+      } else {
+        this.labelResetTimer = setTimeout(() => this.tipLabel.set('Click to copy'), 200);
+      }
+    }, 2000);
   }
 
   /** For browsers without the async clipboard API, or a denied permission. */
