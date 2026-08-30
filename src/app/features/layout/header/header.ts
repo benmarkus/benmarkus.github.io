@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, ElementRef, HostListener, signal, ViewChild } from '@angular/core';
 import { Navbar } from '../navbar/navbar';
 
 /** Split so the plain address never appears as a scrapable literal. */
@@ -17,9 +17,21 @@ export class Header {
   protected readonly copied = signal(false);
   protected readonly tipLabel = signal('Click to copy');
   protected readonly hovering = signal(false);
+  protected readonly dismissed = signal(false);
+
+  @ViewChild('emailWrap') private emailWrapRef?: ElementRef<HTMLElement>;
 
   private copiedTimer?: ReturnType<typeof setTimeout>;
   private labelResetTimer?: ReturnType<typeof setTimeout>;
+
+  @HostListener('document:click', ['$event'])
+  protected onDocumentClick(event: MouseEvent): void {
+    const wrap = this.emailWrapRef?.nativeElement;
+    if (wrap && !wrap.contains(event.target as Node)) {
+      this.dismissed.set(true);
+      (document.activeElement as HTMLElement | null)?.blur();
+    }
+  }
 
   protected async copyEmail(): Promise<void> {
     const email = `${EMAIL_USER}@${EMAIL_DOMAIN}.${EMAIL_TLD}`;
@@ -32,6 +44,7 @@ export class Header {
       }
     }
 
+    this.dismissed.set(false);
     clearTimeout(this.labelResetTimer);
     this.tipLabel.set('Copied to clipboard');
     this.copied.set(true);

@@ -8,12 +8,14 @@
         github: <span class="highlight">&#64;benmarkus</span>
       </a>
       <br />
-      <span class="email-wrap" (mouseenter)="hovering.set(true)" (mouseleave)="hovering.set(false)">
+      <span class="email-wrap" #emailWrap
+            (mouseenter)="hovering.set(true); dismissed.set(false)" (mouseleave)="hovering.set(false)">
         <button type="button" class="link email-btn" (click)="copyEmail()"
                 aria-label="Copy email address to clipboard">
           email: <span class="highlight">{{ emailDisplay }}</span>
         </button>
-        <span class="email-tip" [class.email-tip--active]="copied()" role="status" aria-live="polite">
+        <span class="email-tip" [class.email-tip--active]="copied()" [class.email-tip--dismissed]="dismissed()"
+              role="status" aria-live="polite">
           {{ tipLabel() }}
         </span>
       </span>
