@@ -10,7 +10,7 @@
     "id": 2,
     "title": "ELTE University Semester Planner",
     "url": "https://github.com/slashwarm/elte-orarend",
-    "description": "A University course planner widely used by CompSci faculty students at ELTE, it provides a better user interface and a more reliable data source for course planning than official university sites such as Neptun",
+    "description": "A university course planner widely used by CompSci faculty students at ELTE, it provides a better user interface and a more reliable data source for course planning than official university sites such as Neptun.",
     "tags": ["typescript", "react"]
   },
   {

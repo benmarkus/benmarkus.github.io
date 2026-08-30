@@ -71,9 +71,7 @@
   .timeline-year {
     position: sticky;
     top: 1.5rem;
-    text-align: right;
     line-height: 1.2;
-    padding-right: 0.75rem;
     margin-top: -0.36rem;
   }
 
