@@ -8,15 +8,16 @@
         github: <span class="highlight">&#64;benmarkus</span>
       </a>
       <br />
-      <button type="button" class="link email-btn" (click)="copyEmail()"
-              aria-label="Copy email address to clipboard">
-        email: <span class="highlight">{{ emailDisplay }}</span>
-      </button>
+      <span class="email-wrap">
+        <button type="button" class="link email-btn" (click)="copyEmail()"
+                aria-label="Copy email address to clipboard">
+          email: <span class="highlight">{{ emailDisplay }}</span>
+        </button>
+        <span class="email-tip" [class.email-tip--active]="copied()" role="status" aria-live="polite">
+          {{ copied() ? 'Copied to clipboard' : 'Click to copy' }}
+        </span>
+      </span>
     </p>
     <app-navbar />
   </div>
-
-  @if (copied()) {
-    <div class="toast" role="status" aria-live="polite">Copied to clipboard</div>
-  }
 </header>

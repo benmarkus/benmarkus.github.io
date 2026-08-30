@@ -76,35 +76,32 @@
   color: var(--color-accent);
 }
 
-.toast {
-  position: fixed;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
+.email-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.email-tip {
+  position: absolute;
+  left: calc(100% + 0.6rem);
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 1000;
-  padding: 0.75rem 1.5rem;
+  padding: 0.35rem 0.75rem;
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
   box-shadow: var(--shadow-card-hover);
   color: var(--color-text-primary);
   font-family: var(--font-mono);
-  font-size: 0.8125rem;
-  animation: toast-in 0.18s ease;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-default);
 }
 
-@keyframes toast-in {
-  from {
-    opacity: 0;
-    transform: translate(-50%, 6px);
-  }
-  to {
-    opacity: 1;
-    transform: translate(-50%, 0);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .toast {
-    animation: none;
-  }
+.email-wrap:hover .email-tip,
+.email-btn:focus-visible + .email-tip,
+.email-tip--active {
+  opacity: 1;
 }
