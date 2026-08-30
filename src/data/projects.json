@@ -8,10 +8,10 @@
   },
   {
     "id": 2,
-    "title": "Glyf",
-    "url": "https://github.com/orgs/glyf-game/repositories",
-    "description": "A branch-off of a popular word completion board game with extra spins.",
-    "tags": ["c#", "react", "typescript", "postgre"]
+    "title": "ELTE University Semester Planner",
+    "url": "https://github.com/slashwarm/elte-orarend",
+    "description": "A University course planner widely used by CompSci faculty students at ELTE, it provides a better user interface and a more reliable data source for course planning than official university sites such as Neptun",
+    "tags": ["typescript", "react"]
   },
   {
     "id": 3,
@@ -26,5 +26,12 @@
     "url": "https://github.com/benmarkus/formal-logic-latex-utilities",
     "description": "LaTeX utilities for the course Formal Logic taught at ELTE.",
     "tags": ["maths", "LaTeX"]
+  },
+  {
+    "id": 5,
+    "title": "Glyf",
+    "url": "https://github.com/orgs/glyf-game/repositories",
+    "description": "A branch-off of a popular word completion board game with extra spins.",
+    "tags": ["c#", "react", "typescript", "postgre"]
   }
 ]

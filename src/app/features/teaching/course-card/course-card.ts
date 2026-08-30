@@ -9,8 +9,4 @@ import { Course } from '../course.model';
 })
 export class CourseCard {
   @Input() course!: Course;
-
-  get repoLabel(): string {
-    return this.course.url?.replace(/^https:\/\//, '') ?? '';
-  }
 }

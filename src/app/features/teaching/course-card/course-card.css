@@ -12,18 +12,6 @@
   box-shadow: var(--shadow-card);
   padding: 1.25rem;
   font-family: var(--font-mono);
-  text-decoration: none;
-  color: inherit;
-  transition: background-color var(--transition-default),
-              border-color var(--transition-default),
-              box-shadow var(--transition-default);
-}
-
-.card:not(.card--no-repo):hover,
-.card:not(.card--no-repo):focus-visible {
-  background-color: var(--color-surface-hover);
-  border-color: var(--color-accent);
-  box-shadow: var(--shadow-card-hover);
 }
 
 .card--no-repo {
@@ -63,26 +51,42 @@
 .card-tags {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 0.4rem;
 }
 
 .card-repo {
-  background-color: var(--color-accent-muted);
+  background-color: #1f3d24;
   border: 1px solid #000;
-  padding: 0.35rem 0.6rem;
-  font-size: 0.72rem;
-  color: var(--color-accent);
-  overflow-wrap: anywhere;
-  transition: background-color var(--transition-default);
+  padding: 0.45rem 0.9rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #7fe38c;
+  text-decoration: none;
+  transition: background-color var(--transition-default),
+              border-color var(--transition-default);
+  flex-basis: 100%;
+  margin-top: 0.5rem;
 }
 
-.card:hover .card-repo,
-.card:focus-visible .card-repo {
-  background-color: var(--color-tag-bg);
+.card-repo:hover,
+.card-repo:focus-visible {
+  background-color: #2a5330;
+  border-color: #7fe38c;
 }
 
 .card-note {
   font-size: 0.72rem;
   font-style: italic;
   color: var(--color-text-secondary);
+}
+
+@media (min-width: 720px) {
+  .card-repo {
+    flex-basis: auto;
+    margin-top: 0;
+    margin-left: auto;
+  }
 }

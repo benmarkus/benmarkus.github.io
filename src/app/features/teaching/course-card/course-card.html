@@ -1,20 +1,21 @@
-<a class="card" [class.card--no-repo]="!course.url" [attr.href]="course.url ?? null"
-   target="_blank" rel="noopener noreferrer">
+<div class="card" [class.card--no-repo]="!course.url">
   <h3 class="card-title">{{ course.title }}</h3>
   <p class="card-meta">
     {{ course.institution }}@if (course.role) { <span> &middot; {{ course.role }}</span> }
   </p>
   <p class="card-description">{{ course.description }}</p>
-  @if (course.tags.length) {
+  @if (course.tags.length || course.url) {
     <div class="card-tags">
       @for (tag of course.tags; track tag) {
         <span class="tag" [attr.data-tag]="tag">{{ tag }}</span>
       }
+      @if (course.url) {
+        <a class="card-repo" [href]="course.url" [title]="course.url"
+           target="_blank" rel="noopener noreferrer">GitHub</a>
+      }
     </div>
   }
-  @if (course.url) {
-    <span class="card-repo">{{ repoLabel }} &rarr;</span>
-  } @else {
+  @if (!course.url) {
     <span class="card-note">No public materials</span>
   }
-</a>
+</div>
