@@ -10,5 +10,5 @@ import projectsData from '../../../../data/projects.json';
   styleUrl: './projects-page.css',
 })
 export class ProjectsPage {
-  projects: Project[] = projectsData;
+  projects: Project[] = [...projectsData].sort((a, b) => a.id - b.id);
 }

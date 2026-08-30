@@ -10,7 +10,11 @@
     @for (tag of project.tags; track tag) {
       <span class="tag" [attr.data-tag]="tag">{{ tag }}</span>
     }
-    <a class="card-repo" [href]="project.url" [title]="project.url"
-       target="_blank" rel="noopener noreferrer">GitHub</a>
+    @if (project.url) {
+      <a class="card-repo" [href]="project.url" [title]="project.url"
+         target="_blank" rel="noopener noreferrer">GitHub</a>
+    } @else {
+      <span class="card-closed" title="Source not publicly available">Closed Source</span>
+    }
   </div>
 </div>
