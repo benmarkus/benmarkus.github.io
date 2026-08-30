@@ -83,9 +83,9 @@
 
 .email-tip {
   position: absolute;
-  left: calc(100% + 0.6rem);
-  top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  top: calc(100% + 0.4rem);
+  transform: translateX(-50%);
   z-index: 1000;
   padding: 0.35rem 0.75rem;
   background-color: var(--color-surface);
@@ -104,4 +104,12 @@
 .email-btn:focus-visible + .email-tip,
 .email-tip--active {
   opacity: 1;
+}
+
+@media (min-width: 720px) {
+  .email-tip {
+    left: calc(100% + 0.6rem);
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
