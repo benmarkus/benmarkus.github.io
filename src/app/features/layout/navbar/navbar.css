@@ -18,5 +18,5 @@
 .nav-link:hover,
 .nav-link.active {
   color: var(--color-text-primary);
-  border-bottom-color: var(--color-accent);
+  border-bottom-color: #e68f38;
 }
