@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, signal } from '@angular/core';
 import { Project } from '../project.model';
 
 @Component({
@@ -9,4 +9,6 @@ import { Project } from '../project.model';
 })
 export class ProjectCard {
   @Input() project!: Project;
+
+  protected readonly mediaLoaded = signal(false);
 }

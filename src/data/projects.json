@@ -4,6 +4,7 @@
     "title": "Lost in Transportation",
     "url": "https://github.com/benmarkus/lost-in-transportation",
     "description": "A desktop transport tycoon game project with original, hand-drawn visual and self-made audio assets.",
+    "media": "assets/lost-in-transportation_demo.gif",
     "tags": ["java", "desktop", "libGDX"]
   },
   {

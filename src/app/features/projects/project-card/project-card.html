@@ -5,6 +5,15 @@
     }
     <h3 class="card-title">{{ project.title }}</h3>
   </div>
+  @if (project.media) {
+    <div class="card-media-wrap">
+      <img class="card-media" [src]="project.media" [alt]="project.title" loading="lazy"
+           (load)="mediaLoaded.set(true)" (error)="mediaLoaded.set(true)" />
+      @if (!mediaLoaded()) {
+        <div class="card-media-placeholder"></div>
+      }
+    </div>
+  }
   <p class="card-description">{{ project.description }}</p>
   <div class="card-tags">
     @for (tag of project.tags; track tag) {

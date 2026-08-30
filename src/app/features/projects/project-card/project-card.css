@@ -34,6 +34,33 @@
   color: var(--color-text-primary);
 }
 
+.card-media-wrap {
+  position: relative;
+  display: block;
+  min-height: 160px;
+}
+
+.card-media {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #000;
+}
+
+.card-media-placeholder {
+  position: absolute;
+  inset: 0;
+  border: 1px solid #000;
+  background: linear-gradient(90deg, var(--color-surface) 25%, var(--color-border) 50%, var(--color-surface) 75%);
+  background-size: 200% 100%;
+  animation: card-media-shimmer 1.4s ease-in-out infinite;
+}
+
+@keyframes card-media-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
 .card-description {
   margin: 0;
   font-size: 0.9rem;
