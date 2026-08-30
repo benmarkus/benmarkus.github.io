@@ -1,4 +1,14 @@
-<nav class="nav">
+<nav class="nav" #nav>
+  @if (stuck()) {
+    <div class="nav-identity">
+      <span class="nav-identity-name">Bence M&aacute;rkus</span>
+      <span class="nav-identity-role">Software Developer</span>
+    </div>
+  }
   <a class="nav-link" routerLink="/projects" routerLinkActive="active">PROJECTS</a>
   <a class="nav-link" routerLink="/teaching" routerLinkActive="active">TEACHING</a>
+  @if (stuck()) {
+    <button type="button" class="nav-top-btn" (click)="scrollToTop()"
+            aria-label="Back to top" title="Back to top">&uarr;</button>
+  }
 </nav>

@@ -1,5 +1,4 @@
 import { Component, ElementRef, HostListener, signal, ViewChild } from '@angular/core';
-import { Navbar } from '../navbar/navbar';
 
 /** Split so the plain address never appears as a scrapable literal. */
 const EMAIL_USER = 'markusbence0';
@@ -8,7 +7,6 @@ const EMAIL_TLD = 'com';
 
 @Component({
   selector: 'app-header',
-  imports: [Navbar],
   templateUrl: './header.html',
   styleUrl: './header.css',
 })
