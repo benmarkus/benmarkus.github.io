@@ -6,9 +6,10 @@
     <h3 class="card-title">{{ project.title }}</h3>
   </div>
   @if (project.media) {
-    <div class="card-media-wrap">
+    <div class="card-media-wrap"
+         [style.aspect-ratio]="project.mediaWidth && project.mediaHeight ? project.mediaWidth + ' / ' + project.mediaHeight : null">
       <img class="card-media" [src]="project.media" [alt]="project.title" loading="lazy"
-           (load)="mediaLoaded.set(true)" (error)="mediaLoaded.set(true)" />
+           (load)="onMediaSettled()" (error)="onMediaSettled()" />
       @if (!mediaLoaded()) {
         <div class="card-media-placeholder"></div>
       }

@@ -6,4 +6,6 @@ export interface Project {
     tags: string[];
     icon?: string;
     media?: string;
+    mediaWidth?: number;
+    mediaHeight?: number;
 }
