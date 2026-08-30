@@ -3,7 +3,7 @@
     <h2 class="section__title">Projects</h2>
     <div class="projects-grid">
       @for (project of projects; track project.id) {
-        <app-project-card [project]="project" />
+        <app-project-card #cardEl [project]="project" />
       }
     </div>
   </section>
