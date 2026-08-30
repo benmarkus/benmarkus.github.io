@@ -87,3 +87,10 @@ code, pre, kbd, samp {
 .tag[data-tag="svelte"]              { background: #33190f; color: #f0532e; }
 .tag[data-tag="computer networks"]   { background: #143038; color: #4fb8d9; }
 .tag[data-tag="machine learning"]    { background: #2a1430; color: #d670c9; }
+.tag[data-tag="linux"]               { background: #2a2410; color: #d4b83a; }
+.tag[data-tag="bash"]                { background: #132a1c; color: #4ddb85; }
+.tag[data-tag="powershell"]          { background: #10233a; color: #4fa3e0; }
+.tag[data-tag="OOP"]                 { background: #201c2a; color: #a08fd6; }
+.tag[data-tag="UML"]                 { background: #16202e; color: #6ea8dc; }
+.tag[data-tag="swing"]               { background: #241a12; color: #b8794a; }
+.tag[data-tag="git"]                 { background: #330f14; color: #e0475a; }
