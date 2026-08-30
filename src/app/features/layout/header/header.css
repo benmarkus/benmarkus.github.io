@@ -29,6 +29,15 @@
   font-family: var(--font-mono);
 }
 
+.bio {
+  margin: 0.75rem auto 0;
+  max-width: 34rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  font-family: var(--font-body);
+}
+
 .meta {
   margin: 1rem 0 0;
   line-height: 2;
