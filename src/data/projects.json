@@ -13,6 +13,7 @@
     "id": 2,
     "title": "ELTE University Semester Planner",
     "url": "https://github.com/slashwarm/elte-orarend",
+    "liveUrl": "https://elte-orarend.vercel.app/",
     "description": "A university semester planner (known commonly as \"gernyimark\") widely used by CompSci faculty students at ELTE, it provides a better user interface and a more reliable data source for course planning than official university sites such as Neptun.",
     "media": "assets/elte-orarend_screenshot.png",
     "mediaWidth": 1898,

@@ -26,5 +26,9 @@
     } @else {
       <span class="card-closed" title="Source not publicly available">Closed Source</span>
     }
+    @if (project.liveUrl) {
+      <a class="card-live" [href]="project.liveUrl" [title]="project.liveUrl"
+         target="_blank" rel="noopener noreferrer">Live</a>
+    }
   </div>
 </div>

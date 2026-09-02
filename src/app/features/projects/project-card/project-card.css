@@ -102,6 +102,28 @@
   border-color: #7fe38c;
 }
 
+.card-live {
+  flex-basis: 100%;
+  margin-top: 0.5rem;
+  background-color: #1a3350;
+  border: 1px solid #000;
+  padding: 0.45rem 0.9rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #7fc3ff;
+  text-decoration: none;
+  transition: background-color var(--transition-default),
+              border-color var(--transition-default);
+}
+
+.card-live:hover,
+.card-live:focus-visible {
+  background-color: #26496e;
+  border-color: #7fc3ff;
+}
+
 .card-closed {
   flex-basis: 100%;
   margin-top: 0.5rem;
