@@ -13,7 +13,7 @@
     "id": 2,
     "title": "ELTE University Semester Planner",
     "url": "https://github.com/slashwarm/elte-orarend",
-    "description": "A university course planner (known commonly as \"gernyimark\") widely used by CompSci faculty students at ELTE, it provides a better user interface and a more reliable data source for course planning than official university sites such as Neptun.",
+    "description": "A university semester planner (known commonly as \"gernyimark\") widely used by CompSci faculty students at ELTE, it provides a better user interface and a more reliable data source for course planning than official university sites such as Neptun.",
     "media": "assets/elte-orarend_screenshot.png",
     "mediaWidth": 1898,
     "mediaHeight": 910,
@@ -21,13 +21,6 @@
   },
   {
     "id": 6,
-    "title": "Haskell Course Files",
-    "url": "https://github.com/benmarkus/haskell-course-files",
-    "description": "Course files for the course Functional Programming taught at ELTE.",
-    "tags": ["teaching", "haskell", "functional programming"]
-  },
-  {
-    "id": 4,
     "title": "Formal Logic LaTeX utilities",
     "url": "https://github.com/benmarkus/formal-logic-latex-utilities",
     "description": "LaTeX utilities for the course Formal Logic taught at ELTE.",
@@ -45,5 +38,12 @@
     "title": "Bachelor's Thesis - Token-governed PPV Network Analysis",
     "description": "Currently closed-source until it's finished and published. A software suite for PPV (Per Packet Value) simulation, where congestion events are handled with a packet value mark governed by a token limit on host machines. Consists of a simulation engine built on top of OMNeT++ and extended with neural networks acting as the host machine user tagging the packets, an ASP.NET backend for storage, analytics and serving data and a Svelte frontend for display.",
     "tags": ["thesis", "c++", "omnet++", "svelte", "typescript", "c#", "asp.net", "computer networks", "machine learning"]
+  },
+  {
+    "id": 4,
+    "title": "Haskell Expression Evaluator",
+    "url": "https://github.com/benmarkus/haskell-expression-evaluator",
+    "description": "A project that runs and determines the type or value of any expression as Haskell syntax. It handles critical edge cases such as infinite expressions, undefined or incorrect syntax gracefully, which is not as easy as it sounds, since we have to handle and do operations on untyped expressions in a strictly typed environment that is Haskell. It's planned to be used on a future Haskell e-learning site.",
+    "tags": ["haskell", "servant"]
   }
 ]
