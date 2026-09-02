@@ -29,7 +29,6 @@
               "src/styles.css"
             ],
             "outputMode": "static",
-            "prerender": true,
             "security": {
               "allowedHosts": []
             }
