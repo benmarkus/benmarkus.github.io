@@ -5,8 +5,8 @@
       <span class="nav-identity-role">Software Developer</span>
     </div>
   }
-  <a class="nav-link" routerLink="/projects" routerLinkActive="active">PROJECTS</a>
-  <a class="nav-link" routerLink="/teaching" routerLinkActive="active">TEACHING</a>
+  <a class="nav-link" routerLink="/projects" routerLinkActive="active" (click)="onNavLinkClick()">PROJECTS</a>
+  <a class="nav-link" routerLink="/teaching" routerLinkActive="active" (click)="onNavLinkClick()">TEACHING</a>
   @if (stuck()) {
     <button type="button" class="nav-top-btn" (click)="scrollToTop()"
             aria-label="Back to top" title="Back to top">&uarr;</button>
